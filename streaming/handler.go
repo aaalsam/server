@@ -48,8 +48,8 @@ func (sh *StreamingHandler) Connect() error {
 func (sh *StreamingHandler) Finish() {
 	if !sh.isErr {
 		log.Printf("%s: Завершение...", sh.name)
-		sh.sub.Unsubscribe() // отмена подписки
-		(*sh.conn).Close()   // закрытие соединения
+		sh.sub.Unsubscribe() 
+		(*sh.conn).Close()
 		log.Printf("%s: Завершенно", sh.name)
 	}
 }

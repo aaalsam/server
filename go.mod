@@ -4,13 +4,9 @@ go 1.20
 
 require github.com/lib/pq v1.10.8
 
-require (
-	github.com/go-chi/chi/v5 v5.0.8
-	github.com/nats-io/stan.go v0.10.4
-)
+require github.com/nats-io/stan.go v0.10.4
 
 require (
-	github.com/go-chi/chi v1.5.4 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/nats-io/nats-server/v2 v2.9.16 // indirect

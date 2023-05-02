@@ -73,7 +73,6 @@ func (st *Storage) GetClientByIdFromDB(i int64) (Client, error) {
 	return c, nil
 }
 
-// Загрузка объектов Client (кеша) при его восстановлении
 func (st *Storage) GetCacheState(bufSize int) (map[int64]Client, []int64, int, error) {
 	buffer := make(map[int64]Client, bufSize)
 	queue := make([]int64, bufSize)
